@@ -15,7 +15,7 @@ public with sharing class SendOrderToNPSAPIService {
                     orderRecords.add(record);
         }
     
-        String endpoint = 'callout:NPSAPINamedCredential/orders';
+        String endpoint = 'callout:NPSNamedCredential/orders';
         String method = 'POST';
         String requestBody=JSON.serialize(orderRecords);
     
